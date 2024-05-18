@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/public/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GreenHarvest</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,500;1,500&display=swap"
+        rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,600;1,600&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+        integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <a href="#index.html" class="logo"><svg class="header-logo-left" width="16" height="16">
+                    <use href="./img/icons.svg#icon-logo"></use>
+                </svg>
+                <svg class="header-logo-right" width="148" height="12">
+                    <use href="./img/icons.svg#icon-logotext"></use>
+                </svg>
+            </a>
+            <nav class="header-nav">
+                <ul class="header-menu">
+                    <li class="header-link-how">
+                        <a class="header-item" href="#how_it_works.html">How It Works</a>
+                    </li>
+                    <li class="header-link-veg">
+                        <a class="header-item" href="#vegetables.html">Vegetables</a>
+                    </li>
+                    <li class="header-link-rev">
+                        <a class="header-item" href="#reviews.html">Reviews</a>
+                    </li>
+                </ul>
+    
+                <button class="header-btn" type="button">Shop now</button>
+            </nav>
+            <button class="open-menu-btn" type="button">
+                <svg class="open-menu-icons" width="32" height="32">
+                    <use href="./img/icons.svg#icon-menu"></use>
+                </svg>
+            </button>
+        </div>
+    
+        <div class="mob-menu">
+            <div class="mob-menu-top">
+                <button type="button" class="close-menu-btn">
+                    <svg class="close-icon" width="32" height="32">
+                        <use href="./img/icons.svg#icon-close"></use>
+                    </svg>
+                </button>
+                <nav class="mob-menu-nav">
+                    <ul class="mob-menu-list">
+                        <li class="mob-menu-item">
+                            <a class="mob-menu-link" href="#how_it_works.html">How It Works</a>
+                        </li>
+                        <li class="mob-menu-item">
+                            <a class="mob-menu-link" href="#vegetables.html">Vegetables</a>
+                        </li>
+                        <li class="mob-menu-item">
+                            <a class="mob-menu-link" href="#reviews.html">Reviews</a>
+                        </li>
+                    </ul>
+    
+            </div>
+            <button type="button" class="header-mob-button">Shop now</button>
+            </nav>
+        </div>
+    
+        <div class="modal-overlay">
+            <div class="tab-menu">
+                <div class="tab-menu-top">
+                    <button type="button" class="close-tab-btn">
+                        <svg class="tab-close-icon" width="32" height="32">
+                            <use href="./img/icons.svg#icon-close">
+                            </use>
+                        </svg>
+                    </button>
+                    <nav class="tab-menu-nav">
+                        <ul class="tab-menu-list">
+                            <li class="tab-menu-item">
+                                <a class="tab-menu-link" href="#how_it_works.html">How It Works</a>
+                            </li>
+                            <li class="tab-menu-item">
+                                <a class="tab-menu-link" href="#vegetables.html">Vegetables</a>
+                            </li>
+                            <li class="tab-menu-item">
+                                <a class="tab-menu-link" href="#reviews.html">Reviews</a>
+                            </li>
+                        </ul>
+                </div>
+                <button type="button" class="header-button">Shop now</button>
+            </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-container">
+                <h1 class="hero-title">organic vegetables to your diet today!</h1>
+                <p class="hero-content">
+                    Our expertly curated vegetable baskets are made with the freshest, highest
+                    quality vegetables available. Fresh Harvest Box has got you covered.
+                    Fresh, high-quality vegetables in expertly curated vegetable baskets
+                    delivered to you.
+                </p>
+            </div>
+        </section>
+
+
+    <section class="cont-how-it-works" id="how_it_works.html">
+        <div class="how-it-works-container container">
+            <h2 class="visually-hidden">How It Works</h2>
+            <div class="how-it-works">
+                <picture>
+                    <source srcset="
+                ./img/how-it-works/how-it-descktop.jpg    1x,
+                ./img/how-it-works/how-it-descktop-x2.jpg 2x
+              " media="(min-width: 1280px)" />
+                    <source srcset="
+                ./img/how-it-works/how-it-tablet.jpg    1x,
+                ./img/how-it-works/how-it-tablet-x2.jpg 2x
+              " media="(min-width: 768px)" />
+                    <source srcset="
+                ./img/how-it-works/how-it-mobile.jpg    1x,
+                ./img/how-it-works/how-it-mobile-x2.jpg 2x
+              " media="(max-width: 767px)" />
+                    <img class="photo-how-it-works" src="./img/img-how-it/how-it-work-photo.jpg" width="335" height="450"
+                        alt="how-it-works" />
+                </picture>
+            </div>
+    
+            <div class="description-how-it">
+                <h2 class="tittle-how-it-works">
+                    TO ORDER YOUR
+                    <span class="span-tittle-how-it">VEGETABLE</span> BASKET, SIMPLY FOLLOW
+                    THESE
+                    <span class="span-tittle-how-it">EASY STEPS</span>
+                </h2>
+                <p class="paragraph-how-it-works">
+                    Our baskets are assembled with care and delivered straight to your
+                    doorstep, so you can enjoy the taste of fresh fruit without ever leaving
+                    your home.
+                </p>
+                <ol class="list-how-it-works">
+                    <li class="list-text-how-it">
+                        <div class="number-list-redackt">1</div>
+                        <p class="paragraph-list-how-it">
+                            Just choose
+                            <span class="text-paragraph-how-it">the vegetable</span> you want to
+                            order by clicking on the checkboxes
+                            <span class="text-paragraph-how-it">next to it.</span>
+                        </p>
+                    </li>
+                    <li class="list-text-how-it">
+                        <div class="number-list-redackt-two">2</div>
+                        <p class="paragraph-two-list-how-it">
+                            Click on <span class="text-paragraph-how-it">the basket</span> and
+                            fill out the form.
+                        </p>
+                    </li>
+                    <li class="list-text-how-it">
+                        <div class="number-list-redackt-three">3</div>
+                        <p class="paragraph-thre-list-how-it">
+                            Sit back and relax! Your
+                            <span class="text-paragraph-how-it"> fresh vegetables</span>
+                            basket will be delivered.
+                        </p>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+
+    <section class=" discount">
+        <div class="discount-container container">
+            <h2 class="discount-title visually-hidden">Discount up to 40%!</h2>
+            <p class="discount-text"><span class="discount-text-green">Discount up to 40%!</span> Taste the vitamins and
+                keep
+                your health</p>
+        </div>
+    </section>
+
+        <section class="vegetables" id="vegetables.html">
+            <div class="container vegetables-container">
+                <h2 class="vegetables-title">
+                    organic <span class="vegetables-title-accent">vegetables</span>
+                </h2>
+                <p class="vegetables-paragraph">
+                    Our organic vegetables are hand-picked from local farms and delivered
+                    straight to your doorstep, ensuring that you get the freshest and most
+                    nutritious produce possible.
+                </p>
+                <ul class="vegetables-list">
+                    <li class="vegetables-item">
+                        <h3 class="vegetables-name">eggplant</h3>
+                        <p class="vegetables-price">60 UAH / kg</p>
+                        <img class="vegetables-pic" srcset="
+                    ./img/vegetables/eggplant@1x.webp 1x,
+                    ./img/vegetables/eggplant@2x.webp 2x
+                  " src="./img/vegetables/eggplant@1x.webp" alt="eggplant" width="282" height="243" />
+                    </li>
+                    <li class="vegetables-item">
+                        <h3 class="vegetables-name">leek</h3>
+                        <p class="vegetables-price">50 UAH / kg</p>
+                        <img class="vegetables-pic" srcset="
+                    ./img/vegetables/leak@1x.webp 1x,
+                    ./img/vegetables/leak@2x.webp 2x
+                  " src="./img/vegetables/leak@1x.webp" alt="leek" width="282" height="243" />
+                    </li>
+                    <li class="vegetables-item">
+                        <h3 class="vegetables-name">mushrooms</h3>
+                        <p class="vegetables-price">40 UAH / kg</p>
+                        <img class="vegetables-pic" srcset="
+                    ./img/vegetables/mushrooms@1x.webp 1x,
+                    ./img/vegetables/mushrooms@2x.webp 2x
+                  " src="./img/vegetables/mushrooms@1x.webp" alt="mushrooms" width="282" height="243" />
+                    </li>
+                    <li class="vegetables-item">
+                        <h3 class="vegetables-name">corn</h3>
+                        <p class="vegetables-price">60 UAH / kg</p>
+                        <img class="vegetables-pic" srcset="
+                    ./img/vegetables/corn@1x.webp 1x,
+                    ./img/vegetables/corn@2x.webp 2x
+                  " src="./img/vegetables/corn@1x.webp" alt="corn" width="282" height="243" />
+                    </li>
+                    <li class="vegetables-item">
+                        <h3 class="vegetables-name">sweet potatoes</h3>
+                        <p class="vegetables-price">50 UAH / kg</p>
+                        <img class="vegetables-pic" srcset="
+                    ./img/vegetables/potato@1x.webp 1x,
+                    ./img/vegetables/potato@2x.webp 2x
+                  " src="./img/vegetables/potato@1x.webp" alt="sweet potatoes" width="282" height="243" />
+                    </li>
+                    <li class="vegetables-item">
+                        <h3 class="vegetables-name">carrot</h3>
+                        <p class="vegetables-price">40 UAH / kg</p>
+                        <img class="vegetables-pic" srcset="
+                    ./img/vegetables/carrot@1x.webp 1x,
+                    ./img/vegetables/carrot@2x.webp 2x
+                  " src="./img/vegetables/carrot@1x.webp" alt="carrot" width="282" height="243" />
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    <section class="reviews" id="reviews.html">
+        <div class="reviews-container container">
+            <div class="reviews-top">
+                <h2 class="reviews-title">
+                    reviews from our <span class="reviews-title-part">customers</span>
+                </h2>
+                <p class="reviews-text">
+                    Words of our customers: impressions and opinions about the quality of
+                    our services and the freshness of our products.
+                </p>
+            </div>
+            <ul class="reviews-list">
+                <li class="reviews-list-item reviews-phone">
+                    <img class="reviews-img" srcset="
+                ./img/reviews/john-wax.jpg    1x,
+                ./img/reviews/john-wax-2x.jpg 2x
+              " src="./src/img/reviews/john-wax.jpg" alt="John Wax" />
+                    <h3 class="review-description-title">John Wax</h3>
+                    <p class="review-description-text">
+                        These vegetables are my secret to delicious and healthy meals. The
+                        quality is always at the highest level, the aroma and taste are
+                        enchanting. I advise every fan of real products!
+                    </p>
+                </li>
+                <li class="reviews-list-item reviews-tablet">
+                    <img class="reviews-img" srcset="
+                ./img/reviews/victoria-romashenko.jpg    1x,
+                ./img/reviews/victoria-romashenko-2x.jpg 2x
+              " src="./img/reviews/victoria-romashenko.jpg" alt="Victoria Romashenko" />
+                    <h3 class="review-description-title">Victoria Romashenko</h3>
+                    <p class="review-description-text">
+                        I love how fast and fresh the vegetables are delivered. Salads always
+                        turn out so appetizing, and soups are real masterpieces. The quality
+                        is impeccable!
+                    </p>
+                </li>
+                <li class="reviews-list-item reviews-pc">
+                    <img class="reviews-img" srcset="
+                ./img/reviews/ihor-trachuk.jpg    1x,
+                ./img/reviews/ihor-trachuk-2x.jpg 2x
+              " src="./img/reviews/ihor-trachuk.jpg" alt="Ihor Trachuk" />
+                    <h3 class="review-description-title">Ihor Trachuk</h3>
+                    <p class="review-description-text">
+                        Recently tried my fresh tomatoes and peppers - amazing! The
+                        authenticity of the taste, as if from the garden directly to my table.
+                        It is now my main vegetable supplier.
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="your-order">
+        <div class="container your-order-container">
+            <div class="your-order-title-box">
+                <h2 class="your-order-title">
+                    Fresh <span class="your-order-title-span">Harvest</span> Box has got you
+                    covered
+                </h2>
+                <p class="your-order-text">
+                    Our boxes are packed with delicious, nutritious vegetables, perfect for
+                    anyone looking to eat healthier or support local farmers. Order your box
+                    today and start enjoying the best that nature has to offer!
+                </p>
+            </div>
+            <div class="your-order-box">
+                <form class="your-order-form-cont" action="">
+                    <p class="your-order-form-title">
+                        Ordering <span class="your-order-form-span-red">from us</span> is
+                        quick and easy! Fill out
+                        <span class="your-order-form-span-green">the form</span> below and we
+                        will contact you !
+                    </p>
+                    <div class="form-container">
+                        <input class="your-order-input" type="text" id="your-order-input" name="your-order-input"
+                            placeholder="Full Name" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" required />
+                        <input class="your-order-input" type="email" name="email" id="email" placeholder="Email"
+                            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" required />
+                        <textarea class="your-order-textarea" name="comment" id="comment" placeholder="Comment"></textarea>
+                    </div>
+                    <button class="your-order-button" type="submit">Send</button>
+                </form>
+    
+                <div class="your-order-img-cont">
+                    <picture>
+                        <source srcset="
+                  ./img/your-order/img-desk-1x.jpg 1x,
+                  ./img/your-order/img-desk-2x.jpg 2x
+                " media="(min-width: 1280px)" />
+                        <source srcset="
+                  ./img/your-order/img-tab-1x.jpg 1x,
+                  ./img/your-order/img-tab-2x.jpg 2x
+                " media="(min-width: 768px)" />
+                        <source srcset="
+                  ./img/your-order/img-mob-1x.jpg 1x,
+                  ./img/your-order/img-mob-2x.jpg 2x
+                " media="(min-width: 375px)" />
+                        <img srcset="./img/your-order/img-tab-2x.jpg 2x" class="your-order-img"
+                            src="./img/your-order/img-tab-1x.jpg" alt="picture of a girl squeezing a lemon" width="528"
+                            height="273" />
+                    </picture>
+    
+                    <p class="your-order-img-text">Follow us on our social networks:</p>
+                    <ul class="your-order-list">
+                        <li class="your-order-item">
+                            <a class="your-order-link" href="https://www.instagram.com/goitclub/ " target="_blank">instagram
+                                /</a>
+                        </li>
+                        <li class="your-order-item">
+                            <a class="your-order-link" href="https://www.facebook.com/c/GoIT " target="_blank">facebook
+                                /</a>
+                        </li>
+                        <li class="your-order-item">
+                            <a class="your-order-link" href="https://www.youtube.com/goITclub/  "
+                                target="_blank">youtube</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container container">
+            <div class="footer-navigation">
+                <div class="footer-logo">
+                    <a class="footer-button" href="./index.html">
+                        <svg class="icon-logo" width="16" height="16">
+                            <use href="./img/icons.svg#icon-logo"></use>
+                        </svg>
+    
+                        <svg class="icon-logotext" width="146" height="16">
+                            <use href="./img/icons.svg#icon-logotext"></use>
+                        </svg>
+                    </a>
+                    <p class="footer-text">Whether you're looking for a healthy snack or a thoughtful gift, our fruit
+                        baskets are the perfect
+                        choice.</p>
+                </div>
+                <div class="footer-menu-content">
+                    <nav class="footer-nav">
+                        <ul class="footer-menu">
+                            <li> <a class="footer-menu-item" href="#how_it_works.html">how it works</a></li>
+                            <li> <a class="footer-menu-item" href="#vegetables.html">vegetables</a> </li>
+                            <li> <a class="footer-menu-item" href="#reviews.html">reviews</a></li>
+                        </ul>
+                    </nav>
+                    <address class="footer-address">
+                        <ul class="footer-address-list">
+                            <li> <a href="tel:+380684439426" class="footer-adress-link">+380 (68) 443-94-26</a></li>
+                            <li> <a href="" class="footer-adress-link">1678 S. Pioneer Road Salt <br> Lake City UT 84104</a>
+                            </li>
+                        </ul>
+                    </address>
+                </div>
+            </div>
+            <div class="footer-end-content">
+                <p class="footer-end">Privacy Policy <span class="footer-span">/</span> Cookie settings</p>
+                <p class="footer-the-end">&copy;Green Harvest 2023</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
