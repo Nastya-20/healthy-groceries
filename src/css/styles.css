@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 body {
     font-family: 'Inter Tight', sans-serif;
     color: #fbfbfb;
@@ -438,6 +441,10 @@ img {
         text-align: center;
         color: #fbfbfb;
     }
+        .header-item:hover {
+            background: #fff;
+            color:#622133;
+        }
 
     button {
         border-radius: 30px;
@@ -869,12 +876,6 @@ h1 {
 }
 
 @media screen and (min-width: 768px) {
-
-    /* .container {
-        max-width: 768px;
-        padding: 0 32px;
-        
-    } */
     .how-it-works {
         padding-top: 100px;
         padding-left: 64px;
@@ -983,17 +984,15 @@ h1 {
 }
 
 @media screen and (min-width: 1280px) {
-    .container {
-        /* max-width: 1280px;
-        padding: 0 0; */
-
+    .cont-how-it-works  {
+        width: 1280px;
+        margin: 0 auto;
     }
-
-
     .how-it-works-container {
         display: flex;
+        flex-direction: row;
         padding: 0;
-
+ 
     }
 
     .cont-how-it-works {
@@ -1004,8 +1003,7 @@ h1 {
         display: flex;
         width: 430px;
         height: 559px;
-        /* margin: 0 100px; */
-    }
+       }
 
     .photo-how-it-works-tablet {
         display: none;
@@ -1016,7 +1014,6 @@ h1 {
         height: 759px;
         padding: 100px 0px 0px 0px;
         gap: 10px;
-        /* opacity: 0px; */
         padding-left: 100px;
         padding-right: 100px;
         padding-top: 100px;
@@ -1030,7 +1027,6 @@ h1 {
         left: 630px;
         padding: 100px 100px 160px 100px;
         gap: 10px;
-        /* opacity: 0px; */
     }
 
     .tittle-how-it-works {
@@ -1051,7 +1047,6 @@ h1 {
 }
 
 .discount {
-
     padding-top: 83px;
     padding-bottom: 80px;
     box-sizing: border-box;
@@ -1332,9 +1327,6 @@ h1 {
     padding-left: 7px;
     padding-right: 7px;
 }
-
-/* media */
-/* media */
 
 @media screen and (min-width: 375px) {
     .reviews-container {
