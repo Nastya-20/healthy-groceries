@@ -27,14 +27,19 @@ function closeMenu(menu) {
     modalOverlay.classList.remove('is-open');
 }
 
- // Обработчики событий для открытия и закрытия мобильного меню
+ // Обработчики событий для открытия и закрытия мобильного и планшетного меню
 openMobMenuBtn.addEventListener('click', () => openMenu(mobMenu));
 closeMobMenuBtn.addEventListener('click', () => closeMenu(mobMenu));
 tabMenu.addEventListener('click', () => closeMenu(tabMenu));
 
-// Обработчик события для кнопки "Shop now"
+// Обработчик события для кнопки "Shop now" в мобменю
 document.getElementById('order-btn').addEventListener('click', function() {
       closeMenu(mobMenu);
+document.getElementById('order-form').scrollIntoView({ behavior: 'smooth' });
+});
+// Обработчик события для кнопки "Shop now" в tabменю
+document.getElementById('order-tab-btn').addEventListener('click', function() {
+      closeMenu(tabMenu);
 document.getElementById('order-form').scrollIntoView({ behavior: 'smooth' });
 });
 

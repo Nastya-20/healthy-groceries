@@ -365,17 +365,30 @@ img {
         color: #fbfbfb;
     }
 
-    .header-button {
-        background-color: #fbfbfb;
-        color: #7A3145;
-        min-width: 157px;
-        height: 52px;
-        transition: background-color .3s cubic-bezier(.4, 0, .2, 1)
+    .header-tab-button {
+        display: block;
+        min-width: 155px;
+        height: 50px;
+        border: 1px solid rgba(251, 251, 251, 0.2);
+        border-radius: 30px;
+        cursor: pointer;
+        margin-bottom: 20px;
+        margin-right: auto;
+        margin-left: auto;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 129%;
+        letter-spacing: -0.01em;
+        text-transform: uppercase;
+        background-color: #7A3145;
+        color: #fbfbfb;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    .header-button:hover,
-    .header-button:focus {
-        color: rgba(122, 49, 69, 0.7);
+    .header-tab-button:hover,
+    .header-tab-button:focus {
+        background-color: #fbfbfb;
+        color: #7A3145;
     }
 }
 
