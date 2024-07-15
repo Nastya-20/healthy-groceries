@@ -30,6 +30,7 @@ function closeMenu(menu) {
  // Обработчики событий для открытия и закрытия мобильного меню
 openMobMenuBtn.addEventListener('click', () => openMenu(mobMenu));
 closeMobMenuBtn.addEventListener('click', () => closeMenu(mobMenu));
+tabMenu.addEventListener('click', () => closeMenu(tabMenu));
 
 // Обработчик события для кнопки "Shop now"
 document.getElementById('order-btn').addEventListener('click', function() {
