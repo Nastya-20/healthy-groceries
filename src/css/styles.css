@@ -696,32 +696,6 @@ h1 {
 
 
 
-
-/* СЧЕТЧИК ВАР 1 */
-
-
-
-
-/* .list-how-it-works {
-    counter-reset: my-awesome-counter;
-
-}
-
-.list-how-it-works>li {
-    counter-increment: my-awesome-counter;
-    margin-bottom: 10px;
-}
-
-.custom-counter>li::before {
-    content: counter(my-awesome-counter) ". ";
-    font-weight: bold;
-} */
-
-
-
-
-/* СЧЕТЧИК ВАР 2 */
-
 .list-how-it-works {
     counter-reset: section;
     list-style-type: none;
@@ -731,10 +705,6 @@ h1 {
     counter-increment: section;
     content: counters(section, ".") " ";
 }
-
-
-
-
 
 .list-how-it-works {
     display: flex;
