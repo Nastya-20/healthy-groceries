@@ -26,6 +26,19 @@ function closeMenu(menu) {
     menu.classList.remove('is-open');
     modalOverlay.classList.remove('is-open');
 }
+document.getElementById('preview-work').addEventListener('click', function () {
+    closeMenu(mobMenu);
+    document.getElementById('how_it_works').scrollIntoView({ behavior: 'smooth' })
+});
+document.getElementById('preview-vegetables').addEventListener('click', function () {
+    closeMenu(mobMenu);
+    document.getElementById('vegetables').scrollIntoView({ behavior: 'smooth' })
+});
+document.getElementById('preview-reviews').addEventListener('click', function () {
+    closeMenu(mobMenu);
+    document.getElementById('reviews').scrollIntoView({ behavior: 'smooth' })
+});
+
 
  // Обработчики событий для открытия и закрытия мобильного и планшетного меню
 openMobMenuBtn.addEventListener('click', () => openMenu(mobMenu));
