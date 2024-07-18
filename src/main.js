@@ -62,4 +62,51 @@ modalOverlay.addEventListener('click', (event) => {
       closeMenu(mobMenu);
    }
 });
+// Ініціалізація форми
+const formData = {
+    name: "",
+    email: "",
+   comment: ""
+};
+const form = document.querySelector('.form-container');
 
+const saveData = localStorage.getItem('form-container-state');
+if (saveData) {
+    const parsedData = JSON.parse(savedData);
+    formData.name = parsedData.name || "";
+    formData.email = parsedData.email || "";
+    formData.comment = parsedData.comment || "";
+    form.name.value = formData.name;
+    form.email.value = formData.email;
+    form.comment.value = formData.comment;
+}
+form.addEventListener('input', event => {
+    formData[event.target.name] = event.target.value.trim();
+    localStorage.setItem('form-container-state', JSON.stringify(formData));
+});
+
+form.addEventListener('submit', event => {
+  event.preventDefault();
+
+  if (!formData.name || !formData.email || !formData.comment) {
+    alert('Будь ласка, заповніть усі поля форми');
+    return;
+  }
+
+  console.log(formData);
+
+    localStorage.removeItem('form-container-state');
+    formData.name = "";
+  formData.email = "";
+  formData.comment = "";
+  form.reset();
+});
+const input = document.querySelector('input');
+if (input) { // Перевірка чи елемент існує
+    input.addEventListener('focus', () => {
+        input.setAttribute('placeholder', 'Type area');
+    });
+    input.addEventListener('blur', () => {
+        input.removeAttribute('placeholder');
+    });
+}
