@@ -133,3 +133,24 @@ inputs.forEach(input => {
 // Завантаження збережених даних при завантаженні сторінки
 loadFormData();
 
+// Получаем кнопку
+const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+
+// Функция отображения кнопки при прокрутке
+window.addEventListener('scroll', () => {
+    if (window.pageYOffset > 300) { // Если прокрутка больше 300 пикселей
+        scrollToTopBtn.style.display = 'block';
+    } else {
+        scrollToTopBtn.style.display = 'none';
+    }
+});
+
+// Функция прокрутки вверх при нажатии на кнопку
+scrollToTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth' // Плавная прокрутка
+    });
+});
+
+
