@@ -66,47 +66,70 @@ modalOverlay.addEventListener('click', (event) => {
 const formData = {
     name: "",
     email: "",
-   comment: ""
+    comment: ""
 };
-const form = document.querySelector('.form-container');
+const form = document.querySelector('#order-form');
 
-const saveData = localStorage.getItem('form-container-state');
-if (saveData) {
-    const parsedData = JSON.parse(savedData);
-    formData.name = parsedData.name || "";
-    formData.email = parsedData.email || "";
-    formData.comment = parsedData.comment || "";
-    form.name.value = formData.name;
-    form.email.value = formData.email;
-    form.comment.value = formData.comment;
-}
+// Завантаження збережених даних з localStorage
+const loadFormData = () => {
+    const savedData = localStorage.getItem('form-container-state');
+    if (savedData) {
+        const parsedData = JSON.parse(savedData);
+        formData.name = parsedData.name || "";
+        formData.email = parsedData.email || "";
+        formData.comment = parsedData.comment || "";
+
+        // Перевірка чи існують елементи форми
+        const nameInput = form.querySelector('input[name="name"]');
+        const emailInput = form.querySelector('input[name="email"]');
+        const commentTextarea = form.querySelector('textarea[name="comment"]');
+        
+        if (nameInput) nameInput.value = formData.name;
+        if (emailInput) emailInput.value = formData.email;
+        if (commentTextarea) commentTextarea.value = formData.comment;
+    }
+};
+
+// Збереження даних до localStorage
+const saveFormData = () => {
+    localStorage.setItem('form-container-state', JSON.stringify(formData));
+};
+
+// Обробка події введення
 form.addEventListener('input', event => {
     formData[event.target.name] = event.target.value.trim();
-    localStorage.setItem('form-container-state', JSON.stringify(formData));
+    saveFormData();
 });
 
+// Обробка події відправлення форми
 form.addEventListener('submit', event => {
-  event.preventDefault();
+    event.preventDefault();
 
-  if (!formData.name || !formData.email || !formData.comment) {
-    alert('Будь ласка, заповніть усі поля форми');
-    return;
-  }
+    if (!formData.name || !formData.email || !formData.comment) {
+        alert('Будь ласка, заповніть усі поля форми');
+        return;
+    }
 
-  console.log(formData);
+    console.log(formData);
 
     localStorage.removeItem('form-container-state');
     formData.name = "";
-  formData.email = "";
-  formData.comment = "";
-  form.reset();
+    formData.email = "";
+    formData.comment = "";
+    form.reset();
 });
-const input = document.querySelector('input');
-if (input) { // Перевірка чи елемент існує
+
+// Обробка події фокусу та втрати фокусу для полів введення
+const inputs = document.querySelectorAll('input, textarea');
+inputs.forEach(input => {
     input.addEventListener('focus', () => {
         input.setAttribute('placeholder', 'Type area');
     });
     input.addEventListener('blur', () => {
         input.removeAttribute('placeholder');
     });
-}
+});
+
+// Завантаження збережених даних при завантаженні сторінки
+loadFormData();
+
