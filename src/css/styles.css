@@ -1651,7 +1651,7 @@ h1 {
 }
 
 .your-order-img {
-    border-radius: 15px;
+    border-radius: 25px;
     background: linear-gradient(0deg,
             rgba(20, 20, 20, 0.3) 0%,
             rgba(20, 20, 20, 0.3) 100%),
