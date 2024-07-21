@@ -7,6 +7,7 @@ document.getElementById('order-form').scrollIntoView({ behavior: 'smooth' });
 const mobMenu = document.querySelector('.mob-menu');
 const modalOverlay = document.querySelector('.modal-overlay');
 const closeMobMenuBtn = document.querySelector('.close-menu-btn');
+const body = document.querySelector('body');
 
 
 // Открытие и закрытие таб-меню
@@ -20,11 +21,13 @@ function openMenu(menu) {
     console.log('Opening menu:', menu);
     menu.classList.add('is-open');
     modalOverlay.classList.add('is-open');
+    body.classList.add('no-scroll');
 }
 function closeMenu(menu) {
     console.log('Closing menu:', menu);
     menu.classList.remove('is-open');
     modalOverlay.classList.remove('is-open');
+    body.classList.remove('no-scroll');
 }
 document.getElementById('preview-work').addEventListener('click', function () {
     closeMenu(mobMenu);
